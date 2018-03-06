@@ -1,0 +1,26 @@
+{
+    "name": "qbus/contao-transient-model",
+    "description": "Store and retrieve models in/from the Registry without having to persist data.",
+    "type": "contao-module",
+    "license": "LGPL-3.0+",
+    "authors": [
+        {
+            "name": "Alex Wuttke",
+            "email": "tech@qbus.de",
+            "homepage": "https://www.qbus.de",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "contao-community-alliance/composer-plugin": "~2.0",
+        "contao/core": "3.5.*"
+    },
+    "extra": {
+        "contao": {
+            "sources": {
+                "": "system/modules/transient_model"
+            }
+        }
+    }
+}
