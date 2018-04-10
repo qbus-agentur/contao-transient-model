@@ -20,7 +20,7 @@ trait TransientModelTrait
 	public function registerTransient() {
 		$objRegistry = Registry::getInstance();
 
-		$blnRegistered = $objRegistry::isRegistered($this);
+		$blnRegistered = $objRegistry->isRegistered($this);
 		if ($blnRegistered === true) {
 			return;
 		}
