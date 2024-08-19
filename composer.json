@@ -14,13 +14,18 @@
     "require": {
         "php": ">=5.6.0",
         "contao-community-alliance/composer-plugin": "~2.4 || ~3.0",
-        "contao/core-bundle": "3.5.* || ~4.4"
+        "contao/core-bundle": "~4.4 || ~5.3"
     },
     "extra": {
         "contao": {
             "sources": {
                 "": "system/modules/transient_model"
             }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Qbus\\TransientModel\\": "library/TransientModel/"
         }
     }
 }
